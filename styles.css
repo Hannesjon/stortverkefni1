@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* setjum box-sizing: border-box; Ã¡ allt */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #fffff0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto Slab', serif;
+}
+
+/** haus **/
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+  width: 100%;
+  min-height: 1000px;
+  background: transparent url(bg.jpg) no-repeat fixed 50% 50%;
+  background-size: cover;
+}
+
+header .content {
+  margin: auto;
+}
+
+header h1 {
+  font-size: 4em;
+  padding-top: 15px;
+  padding-right: 20px;
+}
+
+header h2 {
+  font-size: 2em;
+  padding-left: 20px;
+}
+
+.menu {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  max-width: 2000px;
+  height: 40px;
+  background-color: rgba(1, 1, 1, 0.7);
+  justify-content: space-between;
+}
+
+.menuleft {
+  display: flex;
+  width: 100%;
+  margin: 5px;
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+}
+
+.menuright {
+  display: flex;
+  width: 100%;
+  margin: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menubutton {
+  padding: 5px 10px;
+  margin-left: 5px;
+  overflow: hidden;
+  font-size: 1em;
+  color: #eee;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.menubutton:hover {
+  background-color: #666;
+}
+
+.menutext {
+  padding: 5px 10px;
+  margin-left: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #eee;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  display: inline-block;
+  margin-left: 140px;
+  margin-top: 50px;
+  padding: 20px 5px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  width: 30%;
+  max-width: 256px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #eee;
+  background-color: #666;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #eee;
+  background-color: #333;
+}
+
+button--inverted {
+  color: #666;
+  background-color: #eee;
+}
+
+button--inverted:hover {
+  color: #333;
+  background-color: #ccc;
+}
+
+button--disabled, button--disabled:hover {
+  border-color: #eee;
+  color: #999;
+  background-color: #eee;
+}
+
+section {
+  padding: 20px;
+}
+
+.forsida {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+}
+
+.efni {
+  display: flex;
+  margin: 120px 20px 0 20px;
+  flex-direction: column;
+}
+
+@media (min-width: 900px) {
+  .efni {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+  .efni {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.efnistexti {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bigimg {
+  width: 100%;
+}
+
+.efnistexti_stuff {
+  display: flex;
+  flex-direction: row;
+}
+
+.merki {
+  width: 10%;
+}
+
+.merkitexti {
+  margin: 0 20px 20px 20px;
+}
+
+.merkimynd {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+}
+
+.askrift {
+  display: flex;
+  margin-top: 60px;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.customer {
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  width: 100%;
+  margin: 40px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: 600px) {
+  .customer {
+    width: 45%;
+    margin: 10px;
+  }
+}
+
+@media (min-width: 1240px) {
+  .customer {
+    width: 25%;
+  }
+}
+
+.customermynd {
+  margin-bottom: 0;
+}
+
+.customer_img {
+  border-radius: 100%;
+}
+
+.customerquote {
+  font-size: 0.75em;
+  font-style: italic;
+}
+
+.customername .name {
+  margin-top: 20px;
+  font-size: 1em;
+}
+
+.customername .askrifandi {
+  font-size: 0.8em;
+  color: #666;
+}
+
+.mainlok {
+  display: flex;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.yfirtexti {
+  margin-bottom: 30px;
+}
+
+.qoute {
+  font-size: 1.6em;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.lokabutton {
+  display: inline-block;
+  padding: 20px 5px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  width: 80%;
+  max-width: 256px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #eee;
+  background-color: #666;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.lokabutton:hover {
+  color: #eee;
+  background-color: #333;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  flex-direction: column;
+  background-color: #464646;
+}
+
+.footercontent {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footerdiv1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footerdiv2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footertexti {
+  align-self: center;
+  max-width: max-content;
+  color: #fff;
+}
+
+.footerhr {
+  border-color: #fff;
+}
+
+.lowerfooter {
+  color: #666;
+}
