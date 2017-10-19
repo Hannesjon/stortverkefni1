@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="is">
+
+<head>
+  <meta charset="utf-8">
+  <title>kaupa</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="styles1.css">
+</head>
+
+<body>
+  <header>
+    <nav class="menu">
+      <div class="menuleft">
+        <a class="menutext" href="index.html">Fooþjónustan</a>
+      </div>
+      <div class="menuright">
+        <a class="menubutton" href="um.html">Um</a>
+        <a class="menubutton" href="kaupa.html">Kaupa</a>
+      </div>
+    </nav>
+    <div>
+      <h1 class="heading heading--one">Kaupa</h1>
+    </div>
+  </header>
+  <main>
+    <form class="form">
+      <div class="innihald">
+        <fieldset>
+          <legend>Persónuupplýsingar</legend>
+          <p>Nafn:</p>
+          <input class="input" type="text">
+          <p>Kennitala:</p>
+          <input class="input" type="text" placeholder="123456-789">
+          <p>Kyn:</p>
+          <div class="kyn">
+            <label class="kynitem">
+                  <input class="radiobutts" name="kyn" type="radio" value="kvk">
+                  <p class="kynp">Kona</p>
+              </label>
+            <label class="kynitem">
+                  <input class="radiobutts" name="kyn" type="radio" value="kk">
+                  <p class="kynp">Karl</p>
+              </label>
+            <label class="kynitem">
+                  <input class="radiobutts" name="kyn" type="radio" value="hk">
+                  <p class="kynp">Annað</p>
+              </label>
+          </div>
+          <label>
+          <p>Sími:</p>
+            <input class="input" type="text" placeholder="+354 812 3456">
+        </label>
+          <label>
+            <p>Heimilisfang:</p>
+            <input class"input" type="text">
+            <br>
+        </label>
+          <label class="kynitem">
+                  <input class="radiobutts" type="checkbox">
+                  <p class="kynp">Skrá mig á póstlista</p>
+        </label>
+        </fieldset>
+        <fieldset>
+          <legend>Greiðsluupplýsingar</legend>
+          <label>
+                   <p>Greiða með:</p>
+                   <select class="rukkun">
+                       <option value="1">Kreditkort</option>
+                       <option value="2">Millifærslu</option>
+                       <option value="3">Reiðufé</option>
+                   </select>
+               </label>
+          <label>
+         <p>Nafn á korti:</p>
+         <input class="input" type="text">
+          </label>
+          <label>
+    <p>Kortanúmer:</p>
+    <input class="input" type="text" placeholder="5999-9999-9999-9999">
+    </label>
+          <p>Gildistími:</p>
+          <div class="gildistimi">
+            <label class="expiration">
+          Mán
+          <select>
+          <option value="1">01</option>
+          <option value="2">02</option>
+          <option value="3">03</option>
+          <option value="4">04</option>
+          <option value="5">05</option>
+          <option value="6">06</option>
+          <option value="7">07</option>
+          <option value="8">08</option>
+          <option value="9">09</option>
+          <option value="10">10</option>
+          <option value="12">11</option>
+          <option value="12">12</option>
+        </select>
+      </label>
+            <label class="expiration">
+        Ár
+          <select>
+          <option value="1">2017</option>
+          <option value="2">2018</option>
+          <option value="3">2019</option>
+          <option value="4">2020</option>
+        </select>
+      </label>
+          </div>
+
+        </fieldset>
+      </div>
+    </form>
+    <div class="panta">
+      <button class="button" formaction="">Panta</button>
+  </main>
+  <footer>
+    <div footer class="footer">
+      <div class="footercontent">
+        <div class="footerdiv1">
+          <p class="footertexti">Fooþjónustan</p>
+          <p class="footertexti">123-4567</p>
+        </div>
+        <div class="footerdiv2">
+          <p class="footertexti">Opið 12-13 alla daga</p>
+          <p class="footertexti">Bargata 1</p>
+          <p class="footertexti">900 Foobar</p>
+        </div>
+      </div>
+      <hr class="footerhr"> </hr>
+      <div class="footercontent">
+        <p class="footertexti lowerfooter">© Fooþjónustan 2017</p>
+      </div>
+  </footer>
+</body>
+
+</html>
